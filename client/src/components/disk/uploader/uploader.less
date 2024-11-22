@@ -1,0 +1,86 @@
+@import "../../../utils/color";
+
+.uploader {
+    width: 450px;
+    height: 300px;
+    position: fixed;
+    background-color: @background-color;
+    border-radius: 5px;
+    border: solid 2px @font-color;
+    right: 15px;
+    bottom: 15px;
+    padding: 10px;
+    overflow-y: auto;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: solid 2px ;
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__close {
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        color: @background-color;
+        border: none;
+        background-color: firebrick;
+        border-radius: 5px;
+        cursor: pointer;
+        &:active {
+            transform: scale(90%);
+        }
+    }
+}
+
+.upload-file {
+    display: flex;
+    flex-direction: column;
+    background-color: @background-color;
+    border-bottom: solid 2px @font-color;
+    margin-bottom: 5px;
+    padding: 5px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    &__name {
+        overflow: hidden;
+    }
+    &__remove {
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px @font-color;
+        color: @font-color;
+        font-weight: bold;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    &__progress-bar {
+        height: 1rem;
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, 0.06);
+        margin-bottom: 3px;
+        display: flex;
+    }
+    &__upload-bar {
+        background-color: @font-color;
+        border-radius: 8px;
+    }
+    &__percent {
+        color: @background-color;
+        position: absolute;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}

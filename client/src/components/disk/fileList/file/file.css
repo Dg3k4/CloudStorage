@@ -1,0 +1,74 @@
+.file {
+  margin: 10px 0;
+  border-bottom: solid 2px #566885;
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  align-items: center;
+  cursor: pointer;
+}
+.file:hover {
+  transform: scale(1.01);
+}
+.file__img {
+  justify-self: center;
+}
+.file__size {
+  grid-column-start: 5;
+  justify-self: center;
+}
+.file__date {
+  grid-column-start: 6;
+  justify-self: center;
+}
+.file__btn {
+  display: none;
+  border-radius: 50px;
+  border: solid 2px #566885;
+}
+.file:hover .file__date {
+  grid-column-start: 4;
+}
+.file:hover .file__size {
+  grid-column-start: 3;
+}
+.file:hover .file__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-self: center;
+  justify-self: center;
+  width: 40%;
+  padding: 5px;
+  transform: translateX(-6px);
+  background-color: #E9E6E6;
+  cursor: pointer;
+}
+.file-plate {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.file-plate__img {
+  width: 90px;
+  height: 90px;
+}
+.file-plate__btns {
+  display: none;
+  margin-top: 5px;
+  width: 100%;
+  cursor: auto;
+}
+.file-plate:hover .file-plate__btns {
+  display: flex;
+  justify-content: space-around;
+}
+.file-plate__btn {
+  width: 40%;
+  border-radius: 50px;
+  border: solid 2px #566885;
+  cursor: pointer;
+}
+/*# sourceMappingURL=file.css.map */

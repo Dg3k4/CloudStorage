@@ -1,0 +1,69 @@
+input {
+  height: 45px;
+  width: 100%;
+  padding-left: 10px;
+  border: none 3px;
+  border-bottom: #566885 solid 3px;
+  color: #566885;
+  font-weight: bold;
+  font-size: 18px;
+}
+input:focus {
+  outline: none;
+}
+.registration {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 35px;
+  border-radius: 10px;
+  align-self: center;
+  margin-top: 400px;
+}
+.registration__header {
+  font-size: 35px;
+  font-weight: bolder;
+}
+.registration__btn {
+  margin-top: 25px;
+  height: 45px;
+  width: 180px;
+  align-self: flex-end;
+  background-color: #566885;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: solid transparent 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s all ease-in;
+}
+.registration__btn:active {
+  background-color: white;
+  color: #566885;
+  border: #566885 solid 3px;
+}
+::-webkit-input-placeholder {
+  /* Chrome */
+  color: #566885;
+  font-weight: 700;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #566885;
+  font-weight: 700;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #566885;
+  font-weight: 700;
+}
+:-moz-placeholder {
+  /* Firefox 4 - 18 */
+  color: #566885;
+  font-weight: 700;
+}
+/*# sourceMappingURL=input.css.map */
